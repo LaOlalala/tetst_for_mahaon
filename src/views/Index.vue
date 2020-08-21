@@ -7,13 +7,11 @@
 				<input type="text" v-model='user.withdrawal.card.fullName'>
 				<input type="text" v-model='user.withdrawal.card.date'>
 				<input type="text" v-model='user.withdrawal.card.cvv'>
-				<Input placeholder='Введите сумму' :data='profile.name' :error-text='profile_changed.name.errorText' :success='profile_changed.name.success'  :error='profile_changed.name.error'  @input="onInput($event, 'name')"/>
 			</form>
 	</article>
 </template>
 
 <script>
-import Input from "@/components/Input.vue";
 
 export default {
   name: 'Index',
@@ -51,14 +49,6 @@ export default {
 		}).catch(err => {
 			alert(err);
 		});
-	},
-	//обработка ввода
-	onInput(text, name){
-		const t = this;
-
-		t.profile_changed[name].input_text = text;
-		t.profile_changed[name].success =  false;
-		t.profile_changed[name].error =  false;
 	},
   },
 }

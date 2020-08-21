@@ -116,14 +116,14 @@
 				}
 			}
 			&:focus{
-				border: 1px solid $primary;  line-height: 100%;
+				border: 1px solid #000;  line-height: 100%;
 				+.placeholder{
-					top: 10px; font-size: 13px; line-height: 90%; color: $gray; opacity: 1;
+					top: 10px; font-size: 13px; line-height: 90%; color: #fefefe; opacity: 1;
 				}
 			}
 			&.full{
 				+.placeholder{
-					top: 10px; font-size: 13px; line-height: 90%; color: $gray; opacity: 1;
+					top: 10px; font-size: 13px; line-height: 90%; color: #fefefe; opacity: 1;
 				}
 			}
 		}
